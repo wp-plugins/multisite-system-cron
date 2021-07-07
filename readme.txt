@@ -1,9 +1,10 @@
 === MultiSite System Cron ===
 Contributors: pauiglesias, blogestudio
 Tags: multisite, cron, crontab, linux, system, schedule, scheduling, timer, timing, wp-cron
-Requires at least: 3.3.2
-Tested up to: 4.2.2
-Stable tag: 1.0
+Requires at least: 4.6
+Tested up to: 5.0.3
+Requires PHP: 5.6
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +49,12 @@ No, it's not necessary. You can get the same result with a single line of cronta
 1. Settings screen
 
 == Changelog ==
+
+= 1.1 =
+Release Date: January 25th, 2019
+
+* Add `do_action( 'mssc_add_to_cron', $blog_id, $subsite_url, $sleep );`, allowing developers to add custom cron jobs, see example at https://github.com/soderlind/multisite-mailpoet-cron
+* Minor code updates
 
 = 1.0 =
 Release Date: July 14th, 2015
